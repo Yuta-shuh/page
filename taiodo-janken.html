@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太陽と踊れとじゃんけんしよう！</title>
+</head>
+<body>
+    <h1>太陽と踊れとじゃんけん</h1>
+    <p style="color:white">たまにピーマンが出ます、ピーマンも美味しく食べましょう！</p>
+    <button onclick="openRandomTikTok()">TikTokを開く</button>
+
+    <p>「太陽と踊れ、月夜に唄え」とは関係は無く、非公式、非公認です。</p>
+    <p>じゃんけんがしたくなったらライブ行きましょう→<a href="https://taiyotsukiyo.com/" target="_blank">公式サイト</a></p>
+
+    <script>
+        var alist = [];
+
+        // kao ✌️ ✊
+        alist.push("https://www.tiktok.com/@kao_taiodo/video/7274948689246932232");
+
+        // non ✊
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7276037604410166536");
+
+        // hi ✋
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7275677864765213959");
+
+        // hi ✊
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7275277177921211666");
+
+        // hi ✋
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7274895761660185874");
+
+        // hi ✌ kao ✊
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7274590945847332104");
+
+        // hi ✋
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7274137541761158407");
+
+        // hi ✌
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7273820944769010952");
+
+        // hi ✋
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7273475235540733191");
+
+        // 8 ✌ ✊
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7272340151630630151");
+
+        // hi ✌ ✌
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7270134096704163074");
+
+        // non 
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7268229963956882690");
+
+        // ピーマン
+        alist.push("https://www.tiktok.com/@taiyototsukiyo/video/7258889107722603778");
+
+        function openRandomTikTok() {
+            var randomIndex = Math.floor(Math.random() * alist.length);
+            var randomURL = alist[randomIndex];
+            window.open(randomURL);
+        }
+    </script>
+</body>
+</html>
